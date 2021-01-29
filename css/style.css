@@ -1,6 +1,6 @@
 /* Gjør generelle endringer på hele siden */
 body {
-	font-size: 120%;
+	font-size: 1.2rem;
 	font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -33,7 +33,7 @@ header {
 /* Stilsetter label-elementene */
 label {
 	display: block;
-	font-size: 80%;
+	font-size: 1rem;
 }
 
 /* stilsetter første inputfelt */
@@ -55,6 +55,7 @@ textarea {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  resize: none;
 }
 
 /* Stilsetter main-elementet */
@@ -73,7 +74,7 @@ main {
 	height: 5vh;
 	left: 48.7vw;
 	position: relative;
-	font-size: 100%;
+	font-size: 1rem;
 }
 
 /* Setter opp en flexbox i en div med id flex-container */
@@ -103,7 +104,7 @@ main {
 
 /* Setter font-størrelse på teksten i todo kortene */
 .cardText {
-	font-size: 50%;
+	font-size: 0.7rem;
 }
 
 /* Stilsetter "complete"knappen i todo kortene */
@@ -113,7 +114,7 @@ main {
 	border: 1px solid #56D4C2;
 	border-radius: 5px;
 	position: relative;
-	font-size: 50%;
+	font-size: 0.6rem;
 	width: 75px;
 	height: 25px;
 	padding: 2px;
@@ -136,7 +137,7 @@ main {
 
 /* Justerer skriftstørrelsen på hele siden */
 body {
-	font-size: 100%;
+	font-size: 1rem;
 }
 
 /* Justerer størrelse og utseende på headeren */
@@ -164,7 +165,7 @@ main {
 	height: 6vh;
 	position: absolute;
 	left: 69vw;
-	font-size: 100%;
+	font-size: 1rem;
 }
 
 /* Lager mer mellomrom mellom textarea og "My Todos" overskriften */
