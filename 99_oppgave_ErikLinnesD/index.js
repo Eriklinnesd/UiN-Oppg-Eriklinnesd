@@ -42,7 +42,7 @@ try {
 		const addOne = x => x + 1;
 		
 		// Rewrite the line below to use template literals.
-		const greeting = 'Hello ' + who + '! ' + (addOne(2)) + ' times.';
+		const greeting = `Hello ${who}! ${addOne(2)} times.`;
 
 		// Don't make changes below this line	
 		
@@ -58,14 +58,9 @@ try {
 	(function UseDefaultParameters() {
     
 		// Correct the syntax errors in the function.
-		function hello(who) {
-			if (who === undefined) {
-				who = 'World';
-			}
+		function hello(who = "World") {
 			return 'Hello ' + who + '!';
 		}
-
-
 
 		// Don't make changes below this line	
 
@@ -173,8 +168,7 @@ try {
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
-		let a, b, c;
-		[a, b, c] = [arr[0], arr[2], arr.slice(3)];
+		const [a, b, c] = [arr[0], arr[2], arr.slice(3)];
 
 		// Don't make changes below this line	
 		
@@ -188,20 +182,21 @@ try {
 
   
 	(function UseArrayDestructuring2() {
-		let a = 1;
-		let b = 2;
-		
-		// Use array destructuring to change the 3 statements below into 1 statement.
-		// You should not need a temporary variable anymore.
-		[a, b] = [b, 1];
+        let a = 1;
+        let b = 2;
 
-		// Don't make changes below this line	
+        // Use array destructuring to change the 3 statements below into 1 statement.
+        // You should not need a temporary variable anymore.
+        [a, b] = [b, a]
 		
-		expect(a).toEqual(2);
-		expect(b).toEqual(1);
-		
-		solved++;
-	})();
+
+        // Don't make changes below this line
+
+        expect(a).toEqual(2);
+        expect(b).toEqual(1);
+
+        solved++;
+    })();
 	
 
   
@@ -379,7 +374,7 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
+	/*
 
   /// Arrow functions (bonus) ///
 
